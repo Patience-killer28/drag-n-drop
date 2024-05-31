@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aquamarine;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+.empty {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  border: solid 3px black;
+  background-color: white;
+}
+
+.fill {
+  background-image: url("https://jpeg.org/images/jpeg-home.jpg");
+  height: 145px;
+  width: 145px;
+  background-position: center;
+  background-size: cover;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.hold {
+  border: solid 5px #ccc;
+}
+
+.hovered {
+  background-color: black;
+  border-color: white;
+  border-style: dashed;
+}
